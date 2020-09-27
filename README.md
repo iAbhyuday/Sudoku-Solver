@@ -1,4 +1,4 @@
-# <img src="opecv.png" style="margin-left:45% ;margin-right:50%; height:50px ;width:40px;align:center "/>
+#<div align="center"><img src="opecv.png" height= "90px" width="155px"></div>
 
 
 # Sudoku solver 
