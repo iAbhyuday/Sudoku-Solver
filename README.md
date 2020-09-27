@@ -11,5 +11,22 @@
 > * Pytorch
 > * Sudoku-solver
 
+### Setup
+
+First install sudoku_solver module from pip
+```
+pip install sudoku-solver
+```
+Clone the repository
+
+```
+git clone https://github.com/iAbhyuday/Sudoku-Solver.git
+```
+
+### Try it out
+```
+python solve_sudoku_puzzle.py <image_path>
+```
+
 
 
