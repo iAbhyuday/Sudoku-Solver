@@ -5,4 +5,11 @@
 ## Sudoku solver Pipeline
 <div align="center"><img src="https://i.ibb.co/3sKF9v5/pp.png"></div>
 
+### Requirements
+
+> * Opencv
+> * Pytorch
+> * Sudoku-solver
+
+
 
