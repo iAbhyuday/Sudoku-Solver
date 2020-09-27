@@ -4,12 +4,12 @@ import cv2
 import numpy as np
 from sudoku import Sudoku
 import torch
-
+import sys
 # model
 model = torch.load("sudoku.pth")
 
-def Solve(model):
-    image = cv2.imread("prob.png")
+def Solve(image):
+    
     image = imutils.resize(image,width=600)
     
     puzzleImage,warped_image = find_puzzle(image,debug=False)
@@ -84,4 +84,11 @@ def Solve(model):
         cv2.imshow("Result",puzzleImage)
     cv2.waitKey(0)
 
-Solve(model)
+ if __name__=='__main__':
+    image = sys.argv[1]
+    im = cv2.imread(image)
+
+    if im is None:
+        print("[Error] Image location is incorrect!\n[INFO] Use only JPG/PNG/JPEG images\n")
+    else:
+        Solve(im)
